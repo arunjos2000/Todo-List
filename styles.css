@@ -102,8 +102,10 @@ select {
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  outline: none;
-  border: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
 }
 
 .select {
@@ -125,4 +127,9 @@ select {
   right: 0;
   padding: 1rem;
   pointer-events: none;
+}
+
+.select:hover::after {
+  background: white;
+  color: #ff6f47;
 }
