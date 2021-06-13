@@ -31,7 +31,7 @@ function addTodo(e){
     //Append to List
     todoList.appendChild(todoDiv);
     //CLear Todo Input VAlue
-    todoInput.value="s";
+    todoInput.value="";
 }
 function deleteCheck(e){
     const item= e.target;
